@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Roboto+Condensed&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    /* margin-left: 60px; */
+    margin-top: 20px;
+    letter-spacing: 3.5px;
+    /* float: left; */
+}
+
+.container-fluid h1, h3, .row {
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container-fluid .row img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #26272b;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.container-fluid .row p {
+    /* letter-spacing: 2px; */
+    line-height: 25px;
+    text-align: justify;
+}
+
+.container-fluid .row h3 {
+    text-align: center;
+}
+
+.container-fluid h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+a.title {
+    /* margin-left: -10px; */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    /* margin-top: 20px; */
+    font-size: 35px;
+    letter-spacing: 3.5px;
+}
+
+.navbar ul li {
+    margin: 15px;
+}
+
+.navbar ul li .li-link {
+    position: relative;
+    color: grey;
+}
+
+.navbar ul li .li-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li .li-link:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+section.sec-2 {
+    display: none;
+}
+
+header h1 {
+    color: gray;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+#hr-1 {
+    border: none;
+    height: 30px;
+    width: 60%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+
+.main-content {
+    width: 90%;
+    padding: 10px;
+    margin: 30px auto;
+    text-align: justify;
+}
+
+.main-content h2 {
+    color: #222831;
+    letter-spacing: 2.5px;
+    text-align: center;
+    margin: 30px;
+}
+
+.main-content p, .main-content p a {
+    font-size: 16px;
+    color: #525252;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.main-content ul li {
+    color: #525252;
+    line-height: 35px;
+}
+
+.main-content p a {
+    color: #053f5e;
+}
+
+.main-content p a:hover {
+    color: #2b3595;
+    font-size: 18px;
+}

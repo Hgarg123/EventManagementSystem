@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../static/Style/Blog.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/Style/indexFooter.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        .imgcarousel {
+            width: 100%;
+            height: 90vh;
+        }
+
+        .caption_heading {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark nav1">
+            <div class="container">
+                <a class="navbar-brand title" href="/Home/">Event's</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                        <li class="nav-item active li-link">
+                            <a class="nav-link li-link" href="/Home/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link li-link" href="/MyEvents/">My Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link li-link" href="/Blog/">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link li-link" href="/Gallery/">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link li-link" href="/Services/">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link li-link" href="/About/">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link li-link" href="/ContactUs/">Contact-Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link li-link" href="/Logout/">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="heading-2">
+            <h1>Our Blog</h1>
+            <hr id="hr-1">
+        </div>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade imgcarousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../static/Images/blogslider-1.jpg" class="d-block w-100 imgcarousel" alt="...">
+                    <div class="carousel-img">
+                        <h1 class="ml12">We create. You celebrate.</h1>
+                    </div>
+                    <script src="../static/JavaScript/Blog.js"></script>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/Images/blogslider-2.jpg" class="d-block w-100 imgcarousel" alt="...">
+                    <div class="carousel-img1">
+                        <h1 class="ml11">
+                            <span class="text-wrapper">
+                                <span class="line line1"></span>
+                                <span class="letters">Extra Ordinary life events </span>
+                            </span>
+                        </h1>
+                        <script src="../static/JavaScript/Blog.js"></script>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/Images/blogslider-3.jpg" class="d-block w-100 imgcarousel" alt="...">
+                    <div class="carousel-img2">
+                        <h1 class="ml16">Fresh ideas for your event</h1>
+                    </div>
+                    <script src="../static/JavaScript/Blog.js"></script>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h2 class="thoughts">Thoughts & News</h2>
+        <hr id="hr-1">
+        <!-- Thought-1 -->
+        <div class="content">
+            <div class="main-blog">
+                <div class="left-div">
+                    <img src="../static/Images/blog6.jpg" alt="">
+                </div>
+                <div class="right-div">
+                    <h5>Do you Like to color code..?</h5>
+                    <p>Do you like things to be organized and orderly? Do you thrive using post-its and to-do lists? Is
+                        colour-coding your past time of choice? If so, we might have the job for you!
+                        <br>
+                        Spark Event Management (Spark) is seeking a contract event & administrative assistant to join
+                        our
+                        team in Calgary, AB. We ask that the candidate be available for 30-40 hours per week for this
+                        position, starting immediately.
+                        <br>
+                        The ideal candidate for this position is a highly organized, detail-oriented and self-motivated
+                        individual, who thrives in a dynamic and entrepreneurial environment.
+                    </p>
+                    <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    <p class="written"> Written by Anh . Jul 8,2019</p>
+                </div>
+            </div>
+
+            <!-- Thought-2 -->
+            <div class="main-blog">
+                <div class="left-div">
+                    <img src="../static/Images/blog7.jpg" alt="">
+                </div>
+                <div class="right-div">
+                    <h5>5 Benefits of Attending a Conference</h5>
+                    <p>Webinars and online training tools are replacing the idea of conferences and professional
+                        development events. <br>
+                        That’s what they are saying, but we disagree! There is unique power in being
+                        connected to other people who are active in your line of work, through education and networking.
+                        I believe that professional development is best experienced in person and here's why.
+                    </p>
+                    <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    <p class="written">Written by Kim . Aug 10,2018</p>
+                </div>
+            </div>
+
+            <!-- Thought-3 -->
+            <div class="main-blog">
+                <div class="left-div">
+                    <img src="../static/Images/blog8.jpg" alt="">
+                </div>
+                <div class="right-div">
+                    <h5>The Earlybird Catches the Worm But...</h5>
+                    <p>"Should we extend the earlybird deadline?" We get asked this all the time. And I'm sorry, but the
+                        answer is, "No!" If you are finding that your marketing tactics are not drawing in
+                        registrations
+                        as fast as you hoped before the earlybird deadline, don't panic. We have some tried and true
+                        tactics that can get your registrations to that sold out scenario.
+                    </p>
+                    <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    <p class="written">Written by Kim . Aug 10,2018</p>
+                </div>
+            </div>
+
+
+            <!-- Thought-4 -->
+            <div class="main-blog">
+                <div class="left-div">
+                    <img src="../static/Images/blog9.jpg" alt="">
+                </div>
+                <div class="right-div">
+                    <h5>THE POWER OF BRANDING</h5>
+                    <p>Just pick a type-face, slap on a bold colour, and presto you're done. Wrong. Branding is the face
+                        to your event - your big first impression. If your event branding is professional and polished,
+                        you’re also communicating that all aspects of the event will have the same attention to detail.
+                    </p>
+                    <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    <p class="written">Written by Erinn . May 1,2018</p>
+                </div>
+            </div>
+
+            <!-- Thought-5 -->
+            <div class="main-blog">
+                <div class="left-div">
+                    <img src="../static/Images/blog10.jpg" alt="">
+                </div>
+                <div class="right-div">
+                    <h5>Green is the new Black</h5>
+                    <p>Throughout 2017, headlines about climate change agreements, carbon taxes, pending pipeline deals,
+                        emissions, natural disasters, melting ice caps and unpredictable weather patterns have dominated
+                        our headlines. As meeting and event leaders, a big part of our job is to engage and participate
+                        in conversations about how our events are impacting the environment.
+                    </p>
+                    <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    <p class="written">Written by Anh . Apr 8,2018</p>
+                </div>
+            </div>
+
+            <!-- Thought-6 -->
+            <div class="main-blog">
+                <div class="left-div">
+                    <img src="../static/Images/blog11.jpg" alt="">
+                </div>
+                <div class="right-div">
+                    <h5>MANAGING WITH A FRESH PERSPECTIVE AT PMINAC</h5>
+                    <p>There was no shortage of vibrancy and excitement in May at the Project Management Institute
+                        Northern Alberta Chapter (PMINAC) Conference. With updated branding, a new spacious venue, and a
+                        refreshed vision for a conference experience, the Spark team partnered with one of our long-time
+                        clients to make months of creative rebranding come to life.
+                    </p>
+                    <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    <p class="written">Written by Kim . Jan 5,2018</p>
+                </div>
+            </div>
+
+            <!-- Thought-7 -->
+            <div class="main-blog">
+                <div class="left-div">
+                    <img src="../static/Images/blog12.jpg" alt="">
+                </div>
+                <div class="right-div">
+                    <h5>REPEAT CLIENTS... GETTING TO KNOW YOU!</h5>
+                    <p>One of the things we pride ourselves on at Spark is our ability to maintain client relationships.
+                        We've never lost a client and have had the pleasure of working with most of our clients on
+                        multiple events. It is truly humbling that our clients see value in our services and keep coming
+                        back. The best part about this is that that each time we work with client on an event, it allows
+                        us to deepen our understanding of their business, which inevitably results in better events
+                        every time.
+                    </p>
+                    <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                    <p class="written">Written by Anh . Oct 20,2017</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <section class="sec-1">
+                <section class="about">
+                    <h2>About</h2>
+                    <p>Elevated Event Management Ltd is an event logistics and marketing company which was
+                        formed
+                        back
+                        in 2013. The
+                        company offers A-Z event planning services from a team of experienced and energetic
+                        event
+                        planners, suppliers, venues and more. One of the main reasons behind the success of this
+                        company
+                        is the fact that the team does not charge fees to its clients! With the number of events
+                        we organise, Event Planner Ltd does not need to add exorbitant fees and mark-ups to make
+                        its
+                        profit margins. This ensures that our clients list, which is constantly growing, make
+                        regular
+                        use of our services.</p>
+                </section>
+                <section class="link2">
+                    <h2 class="quick-1">Quick Links</h2>
+                    <ul>
+                        <li><a href="/Home/">Home</a></li>
+                        <li><a href="/About/">About Us</a></li>
+                        <li><a href="/Services/">Services</a></li>
+                        <li><a href="/termsofservices/">Terms of Services</a></li>
+                        <li><a href="/privacypolicy/">Privacy Policy</a></li>
+                    </ul>
+                </section>
+                <section class="link3">
+                    <h2 class="quick-2">Contact Us</h2>
+                    <ul>
+                        <li><i class="fa fa-building"></i><span>A108 Adam Street</span></li>
+                        <li><i class="fa fa-home"></i><span>New York, NY 535022</span></li>
+                        <li><i class="fa fa-envelope"></i><span><a
+                                    href="mailto:example@info.com">example@info.com</a></span></li>
+                        <li><i class="fa fa-phone-square"></i><span><a href="tel:+1 5589 55488 55">Mobile: +1
+                                    5589
+                                    55488
+                                    55</a></span></li>
+                        <li><i class="fa fa-info-circle"></i><a href="#">Elevated Events</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <hr width="100%" noshade>
+            <section class="sec-2">
+                <p>Start your Booking Now..</p>
+                <a href="./Pages/AdminOrCust.html">SignIn</a>
+            </section>
+            <!-- <hr width="100%" noshade> -->
+            <section class="sec-3">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+            </section>
+            <section class="sec-4">
+                <p>
+                    Copyrights &copy 2020 All Rights Reserved By
+                    <a href="#">Elevated Event Management Ltd</a>
+
+                </p>
+            </section>
+        </footer>
+
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- <script src="bootstrap.bundle.min.js / bootstrap.bundle.js "></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>

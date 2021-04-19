@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+a.title {
+    /* margin-left: -10px; */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    /* margin-top: 20px; */
+    font-size: 35px;
+    letter-spacing: 3.5px;
+}
+
+.navbar ul li {
+    margin: 15px;
+}
+
+.navbar ul li .li-link {
+    position: relative;
+    color: grey;
+}
+
+.navbar ul li .li-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li .li-link:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+section.sec-2 {
+    display: none;
+}
+
+.heading-2 h1 {
+    color: gray;
+    text-align: center;
+    /* margin-top: 40px */
+}
+
+.heading-2 h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+#hr-1 {
+    border: none;
+    height: 30px;
+    width: 30%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+    margin-bottom: 35px;
+}
+
+.ml12, .ml11 {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: lightgrey;
+}
+
+.ml16 {
+    font-weight: bold;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: #333;
+}
+
+.ml12 .letter, .ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-img {
+    position: absolute;
+    top: 35%;
+    left: 23%;
+}
+
+.carousel-img1 {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+.carousel-img2 {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+h2.thoughts {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    margin-top: 25px;
+    font-size: 35px;
+    letter-spacing: 3.5px;
+    text-align: center;
+}
+
+#hr-1 {
+    border: none;
+    height: 30px;
+    width: 30%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 30px;
+}
+
+.main-blog {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.main-blog .left-div {
+    float: left;
+    width: 30%;
+}
+
+.main-blog .right-div {
+    float: right;
+    width: 68%;
+    padding: 10px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.main-blog .right-div p {
+    color: gray;
+}
+
+.main-blog .right-div a {
+    text-decoration: none;
+    color: gray;
+}
+
+.main-blog .right-div a:hover {
+    color: black;
+}
+
+.main-blog .left-div img {
+    width: 100%;
+    padding: 10px;
+}
+
+.main-blog::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.right-div p.written {
+    color: lightgray;
+}
+
+@media(max-width:970px) {
+    .carousel-img {
+        position: absolute;
+        top: 35%;
+        left: 17%;
+    }
+    .carousel-img1 {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+    }
+    .carousel-img2 {
+        left: 18%;
+    }
+}
+
+@media(max-width:865px) {
+    .carousel-img2 {
+        left: 16%;
+    }
+    .ml16 {
+        font-size: 1.4em;
+    }
+}
+
+@media(max-width:655px) {
+    .carousel-img2 {
+        left: 13%;
+    }
+    .ml16 {
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width:450px) {
+    .ml12, .ml11 {
+        font-weight: 200;
+        font-size: 1.6em;
+    }
+    .carousel-img {
+        position: absolute;
+        top: 35%;
+        left: 14%;
+    }
+    .carousel-img1 {
+        position: absolute;
+        top: 30%;
+        left: 12%;
+    }
+}
+
+@media(max-width:365px) {
+    .carousel-img {
+        left: 10;
+    }
+    .carousel-img1 {
+        left: 10;
+    }
+    .ml11, .ml12 {
+        font-size: 1.3em;
+    }
+    .ml16 {
+        font-size: 1.1em;
+    }
+}
+
+@media(max-width:322px) {
+    .ml11, .ml12 {
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width:859px) {
+    .main-blog .left-div img {
+        width: 100%;
+        height: 170px;
+        padding: 10px;
+    }
+}
+
+@media(max-width:750px) {
+    .main-blog .left-div {
+        width: 35%;
+    }
+    .main-blog .right-div {
+        /* float: right; */
+        width: 63%;
+    }
+}
+
+@media(max-width:605px) {
+    .main-blog .left-div {
+        width: 100%;
+    }
+    .main-blog .right-div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+a.title {
+    /* margin-left: -10px; */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    /* margin-top: 20px; */
+    font-size: 35px;
+    letter-spacing: 3.5px;
+}
+
+.navbar ul li {
+    margin: 15px;
+}
+
+.navbar ul li .li-link {
+    position: relative;
+    color: grey;
+}
+
+.navbar ul li .li-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li .li-link:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.container button {
+    text-decoration: none;
+    color: white;
+    background: none;
+    outline: none;
+}
+
+section.sec-2 {
+    display: none;
+}
+
+.content-1 {
+    width: 100%;
+    margin: auto;
+}
+
+.content-1 h1 {
+    text-align: center;
+    color: gray;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+}
+
+#hr-1 {
+    border: none;
+    height: 30px;
+    width: 18%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+
+.content-1 h2 {
+    text-align: center;
+    color: #223358f3;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.content-1 .main-content {
+    width: 70%;
+    margin: auto;
+}
+
+.content-1 .main-content img {
+    width: 48%;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    max-height: 350px;
+}
+
+.content-1::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.full-img {
+    width: 97% !important;
+    max-height: 350px;
+}
+
+@media(max-width:740px) {
+    .content-1 h2 {
+        font-size: 28px;
+    }
+    .content-1 h1 {
+        font-size: 30px;
+    }
+    .content-1 .main-content {
+        width: 90%;
+    }
+}
+
+@media(max-width:605px) {
+    .content-1 h2 {
+        font-size: 25px;
+    }
+    .content-1 h1 {
+        font-size: 27px;
+    }
+    .content-1 .main-content {
+        width: 100%;
+    }
+    .content-1 .main-content img {
+        max-height: 260px;
+    }
+    .full-img {
+        max-height: 260px;
+    }
+}
+
+@media(max-width:528px) {
+    .content-1 .main-content {
+        width: 80%;
+        margin: auto;
+    }
+    .content-1 .main-content img {
+        width: 100%;
+    }
+    .full-img {
+        width: 100%;
+    }
+}

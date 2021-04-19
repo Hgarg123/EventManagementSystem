@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/static/Style/Admin.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/Style/indexFooter.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark nav1">
+            <div class="container">
+                <a class="navbar-brand title" href="/Home/">Event's</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                        <li class="nav-item active li-link">
+                            <a class="nav-link li-link" href="/">Home</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header">
+            <h1>Admin Pannel</h1>
+            <hr id="hr-1">
+        </div>
+        {% for booking in bookings %}
+        <div class="content">
+            <div class="left">
+                <img src="../static/{{ booking.venue.image }}" alt="">
+            </div>
+            <div class="right">{% csrf_token %}
+                <div class="right-left">
+                    <h4>Name</h4>
+                    <p>{{booking.user.name}}</p>
+                    <h4>Phone Number</h4>
+                    <p>{{booking.user.mobile_no}}</p>
+                    <h4>Hotel</h4>
+                    <p>{{booking.venue.name}}</p>
+                    <h4>Event Type</h4>
+                    <p>{{booking.venue.event.event_name}}</p>
+                </div>
+                <div class="right-right">
+                    <h4>Event Palace</h4>
+                    <p>{{booking.venue.location}}</p>
+                    <h4>Guests</h4>
+                    <p>{{booking.guest_count}}</p>
+                    <h4>Event Date</h4>
+                    <p>{{booking.date}}</p>
+                    <h4>Status</h4>
+                    <p>{{booking.status}}</p>
+                    <!-- <p class="text-danger">Pending From Management</p> -->
+                    <br>
+                    {% if booking.isPending %}
+                    <a href="/confirmbooking/{{booking.id}}/" class="btn btn-outline-success d-block mt-3 ">Confirm this
+                        booking</a>
+                    <a href="/cancelbooking/{{booking.id}}/" class="btn btn-outline-danger d-block mt-3">Cancel this
+                        booking</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        <footer>
+            <section class="sec-1">
+                <section class="about">
+                    <h2>About</h2>
+                    <p>Elevated Event Management Ltd is an event logistics and marketing company which was formed
+                        back
+                        in 2013. The
+                        company offers A-Z event planning services from a team of experienced and energetic event
+                        planners, suppliers, venues and more. One of the main reasons behind the success of this
+                        company
+                        is the fact that the team does not charge fees to its clients! With the number of events
+                        we organise, Event Planner Ltd does not need to add exorbitant fees and mark-ups to make its
+                        profit margins. This ensures that our clients list, which is constantly growing, make
+                        regular
+                        use of our services.</p>
+                </section>
+                <section class="link2">
+                    <h2 class="quick-1">Quick Links</h2>
+                    <ul>
+                        <li><a href="/Home/">Home</a></li>
+                        <li><a href="/About/">About Us</a></li>
+                        <li><a href="/Services/">Services</a></li>
+                        <li><a href="/termsofservices/">Terms of Services</a></li>
+                        <li><a href="/privacypolicy/">Privacy Policy</a></li>
+                    </ul>
+                </section>
+                <section class="link3">
+                    <h2 class="quick-2">Contact Us</h2>
+                    <ul>
+                        <li><i class="fa fa-building"></i><span>A108 Adam Street</span></li>
+                        <li><i class="fa fa-home"></i><span>New York, NY 535022</span></li>
+                        <li><i class="fa fa-envelope"></i><span><a
+                                    href="mailto:example@info.com">example@info.com</a></span></li>
+                        <li><i class="fa fa-phone-square"></i><span><a href="tel:+1 5589 55488 55">Mobile: +1 5589 55488
+                                    55</a></span></li>
+                        <li><i class="fa fa-info-circle"></i><a href="#">Elevated Events</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <hr width="100%" noshade>
+            <section class="sec-2">
+                <p>Start your Booking Now..</p>
+                <a href="./Pages/AdminOrCust.html">SignIn</a>
+            </section>
+            <!-- <hr width="100%" noshade> -->
+            <section class="sec-3">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+            </section>
+            <section class="sec-4">
+                <p>
+                    Copyrights &copy 2020 All Rights Reserved By
+                    <a href="#">Elevated Event Management Ltd</a>
+
+                </p>
+            </section>
+        </footer>
+    </div>
+</body>
+
+<script>
+
+    confirmBooking = function (bookingid) {
+        $.ajax({
+            url: 'http://127.0.0.1:8000/confirmbooking/' + bookingid + "/",
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                alert("Booking Conirmed");
+            },
+            error: function (request, error) {
+                alert("Request: " + JSON.stringify(request));
+            }
+        });
+    }
+
+</script>
+
+</html>

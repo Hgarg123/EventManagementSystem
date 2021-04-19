@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+a.title {
+    /* margin-left: -10px; */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    /* margin-top: 20px; */
+    font-size: 35px;
+    letter-spacing: 3.5px;
+}
+
+.navbar ul li {
+    margin: 15px;
+}
+
+.navbar ul li .li-link {
+    position: relative;
+    color: grey;
+}
+
+.navbar ul li .li-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li .li-link:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+section.sec-2 {
+    display: none;
+}
+
+.content h1 {
+    color: gray;
+    text-align: center;
+}
+
+.content h1 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+#hr-1 {
+    border: none;
+    height: 30px;
+    width: 50%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+
+.content img {
+    margin: 40px auto;
+    display: block;
+    width: 350px;
+    height: 350px;
+}
+
+.content-2 {
+    margin: auto;
+    width: 50%;
+}
+
+form {
+    padding: 10px 15px;
+}
+
+.form {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.form label {
+    font-size: 18px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+.form1 {
+    display: block;
+    padding: 5px;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    outline: none;
+}
+
+.form select {
+    font-size: 18px;
+    padding: 5px 5px;
+    margin-left: 20px;
+    border: 2px solid gray;
+}
+
+.radio {
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.radio label {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 13px;
+}
+
+.radio #food {
+    margin-bottom: 18px;
+}
+
+.form {
+    text-transform: uppercase;
+}
+
+.price {
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+@media(max-width:890px) {
+    .content img {
+        margin: 40px auto;
+        display: block;
+        width: 300px;
+        height: 300px;
+    }
+    .content-2 {
+        margin: auto;
+        width: 65%;
+    }
+}
+
+@media(max-width:639px) {
+    .content-2 {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media(max-width:517px) {
+    .form select {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:373px) {
+    .content-2 {
+        margin: auto;
+        width: 100%;
+    }
+    .content img {
+        margin: 40px auto;
+        display: block;
+        width: 100%;
+        max-height: 250px;
+        padding: 15px;
+    }
+}

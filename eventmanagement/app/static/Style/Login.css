@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    /* margin-left: 60px; */
+    margin-top: 20px;
+    letter-spacing: 3.5px;
+    /* float: left; */
+}
+
+section.sec-2 {
+    display: none;
+}
+
+.middle {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.middle h2 {
+    text-align: center;
+    color: darkgreen;
+    margin-top: 30px;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form1 input {
+    width: 100%;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#user {
+    margin-bottom: 25px;
+}
+
+.form1 input:focus {
+    border: 2px solid seagreen;
+    border-radius: 15px;
+}
+
+.middle a.link2 {
+    width: 50%;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    display: block;
+    margin: auto;
+    padding: 3px;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.middle a.link2:hover {
+    color: white;
+    background-color: #151518c4;
+}
+
+.middle a.link1 {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    color: seagreen;
+    text-decoration: none;
+}
+
+.middle button.btn2:hover {
+    background-color: darkcyan;
+}
+
+.middle a:hover {
+    color: lightseagreen;
+}
+
+@media(max-width:789px) {
+    header h1 {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: gray;
+        /* margin-left: 60px; */
+        margin-top: 20px;
+        letter-spacing: 3.5px;
+        /* float: left; */
+    }
+    section.sec-2 {
+        display: none;
+    }
+    .middle {
+        width: 70%;
+        margin: auto;
+        display: block;
+    }
+    .middle h2 {
+        text-align: center;
+        color: darkgreen;
+        margin-top: 30px;
+        padding: 20px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    .form label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .form1 input {
+        width: 100%;
+        outline: none;
+        text-decoration: none;
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 10px;
+        font-size: 20px;
+    }
+    #user {
+        margin-bottom: 25px;
+    }
+    .form1 input:focus {
+        border: 2px solid seagreen;
+        border-radius: 15px;
+    }
+    .middle button.btn2 {
+        width: 100%;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+    .middle a {
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        color: seagreen;
+        text-decoration: none;
+    }
+    .middle button.btn2:hover {
+        background-color: darkcyan;
+    }
+    .middle a:hover {
+        color: lightseagreen;
+    }
+}
+
+@media(max-width:501px) {
+    header h1 {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: gray;
+        /* margin-left: 60px; */
+        margin-top: 20px;
+        letter-spacing: 3.5px;
+        /* float: left; */
+    }
+    section.sec-2 {
+        display: none;
+    }
+    .middle {
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding: 15px;
+    }
+    .middle h2 {
+        text-align: center;
+        color: darkgreen;
+        margin-top: 30px;
+        padding: 20px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    .form label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .form1 input {
+        width: 100%;
+        outline: none;
+        text-decoration: none;
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 10px;
+        font-size: 20px;
+    }
+    #user {
+        margin-bottom: 25px;
+    }
+    .form1 input:focus {
+        border: 2px solid seagreen;
+        border-radius: 15px;
+    }
+    .middle button.btn2 {
+        width: 100%;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+    .middle a {
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        color: seagreen;
+        text-decoration: none;
+    }
+    .middle button.btn2:hover {
+        background-color: darkcyan;
+    }
+    .middle a:hover {
+        color: lightseagreen;
+    }
+}

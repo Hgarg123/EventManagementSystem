@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+a.title {
+    /* margin-left: -10px; */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    /* margin-top: 20px; */
+    font-size: 35px;
+    letter-spacing: 3.5px;
+}
+
+.navbar ul li {
+    margin: 15px;
+}
+
+.navbar ul li .li-link {
+    position: relative;
+    color: grey;
+}
+
+.navbar ul li .li-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li .li-link:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+section.sec-2 {
+    display: none;
+}
+
+.header img {
+    margin-top: 10px;
+    width: 100%;
+    max-height: 350px;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.header .heading1 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(168, 165, 165, 0.89);
+    letter-spacing: 4px;
+}
+
+.heading1 h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.heading1 h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content {
+    margin: auto;
+    margin-top: 50px;
+    width: 85%;
+}
+
+.content p {
+    text-align: center;
+    font-size: 43px;
+    font-weight: lighter;
+    font-family: 'Noto Sans JP', sans-serif !important;
+}
+
+.content-1 img {
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+}
+
+.content-1 {
+    position: relative;
+    text-align: center;
+}
+
+.content-1 .heading2 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(8, 8, 8, 0.5);
+    letter-spacing: 4px;
+}
+
+.content-1 .heading2 h2 {
+    font-size: 50px;
+}
+
+.content-1 .heading2 h4 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.content-2 {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.content-2 p {
+    font-weight: lighter;
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.content-2 img {
+    margin-top: 40px;
+    width: 90%;
+}
+
+.content-3 {
+    width: 60%;
+    margin: auto;
+}
+
+.content-3 h2 {
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-size: 45px;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+.content-3 .main-content h5 {
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.content-3 .main-content p {
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-size: 20px;
+    margin-bottom: 60px;
+    letter-spacing: 1.5px;
+}
+
+.content-4 {
+    width: 90%;
+    margin: auto;
+    color: #fcde1bd5;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.content-4 p {
+    margin-top: -15px;
+}
+
+@media(max-width:1060px) {
+    .heading1 h2 {
+        font-size: 35px;
+    }
+    .content-1 .heading2 h2 {
+        font-size: 50 px;
+    }
+}
+
+@media(max-width:956px) {
+    .heading1 h2 {
+        font-size: 30px;
+    }
+    .heading1 h3 {
+        font-size: 25px;
+    }
+    .content-1 .heading2 h2 {
+        font-size: 35 px;
+    }
+    .content-1 .heading2 h4 {
+        font-size: 27px;
+    }
+}
+
+@media(max-width:840px) {
+    .heading1 h2 {
+        font-size: 25px;
+    }
+    .heading1 h3 {
+        font-size: 20px;
+    }
+    .content-1 .heading2 h2 {
+        font-size: 30px;
+    }
+    .content-1 .heading2 h4 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:418px) {
+    .heading1 h2 {
+        font-size: 22px;
+    }
+    .heading1 h3 {
+        font-size: 17px;
+    }
+    .content-1 .heading2 h2 {
+        font-size: 25px;
+    }
+    .content-1 .heading2 h4 {
+        font-size: 17px;
+    }
+    .header img {
+        height: 450px;
+    }
+    .content-1 img {
+        height: 350px;
+    }
+}
+
+@media(max-width:780px) {
+    .content p {
+        font-size: 30px;
+    }
+    .content-2 p {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:555px) {
+    .content p {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:433px) {
+    * {
+        font-size: 18px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content-2 {
+        width: 100%;
+    }
+    .content-3 {
+        width: 100%;
+    }
+}

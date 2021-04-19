@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header .title {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    /* margin-left: 60px; */
+    margin-top: 20px;
+    letter-spacing: 3.5px;
+    /* float: left; */
+}
+
+.middle {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.middle input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+.middle input:focus {
+    border: 2px solid seagreen;
+    border-radius: 15px;
+}
+
+.middle h2 {
+    text-align: center;
+    color: darkgreen;
+    margin-top: 30px;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.submitbtn {
+    /* margin: auto; */
+    width: 100%;
+    text-decoration: none;
+}
+
+.form button.submitbtn:hover {
+    color: black;
+    background-color: darkslategrey;
+}
+
+section.sec-2 {
+    display: none;
+}
+
+section.sec-3 {
+    margin-top: -20px;
+}
+
+@media(max-width:649px) {
+    header .title {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: gray;
+        /* margin-left: 60px; */
+        margin-top: 20px;
+        letter-spacing: 3.5px;
+        /* float: left; */
+    }
+    .middle {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+    .middle input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        position: relative;
+    }
+    .middle input:focus {
+        border: 2px solid seagreen;
+        border-radius: 15px;
+    }
+    .middle h2 {
+        text-align: center;
+        color: darkgreen;
+        margin-top: 30px;
+        padding: 20px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    .submitbtn {
+        /* margin: auto; */
+        width: 100%;
+        text-decoration: none;
+    }
+    .form button.submitbtn:hover {
+        color: black;
+        background-color: darkslategrey;
+    }
+    section.sec-2 {
+        display: none;
+    }
+    section.sec-3 {
+        margin-top: -20px;
+    }
+}
